@@ -1,0 +1,28 @@
+<div id="tudo">
+  <div id="menu" [hidden]="menu">
+  <img id="harry" src="https://cdn.colab55.com/images/1515605371/studio/53279/art/101065/stickers/fosco/standard/1.png"/>
+  <br>
+  <button (click)="jogar()" id="jogar">JOGAR</button>
+  <br>
+  <button (click)="configurar()" id="config">CONFIGURAÇÕES</button>
+  <br>
+  <button (click)="creditos()" id="creditos">CRÉDITOS</button>
+  </div>
+  <div [hidden]="config" id="confi">
+  <audio id="demo" autoplay loop src="../../assets/musicas/tema.mp3"></audio>
+  <div id="bb">
+  <button id="play" onclick="document.getElementById('demo').play()">Play</button>
+  <button id="pause" onclick="document.getElementById('demo').pause()">Stop</button>
+  <br>
+  <button id="mais" onclick="document.getElementById('demo').volume+=0.1">+</button>
+  <button id="menos" onclick="document.getElementById('demo').volume-=0.1">-</button>
+  </div>
+  <button id="vv" (click)="configurar()"><<</button>
+  </div>
+  <div id="credit"[hidden]="credit">
+  <div id="josi">
+  <marquee direction="down">Josineide Silva Soares</marquee>
+  </div>
+  <button id="vv" (click)="creditos()"><<</button>
+  </div>
+  </div>

@@ -1,0 +1,34 @@
+img {
+    max-width:80%;
+}
+p-galleria {
+    top:90%;
+    position: absolute;
+    width: 100%;
+}
+#f{
+    top:0%;
+    width: 100%;
+    height:90%;
+    position: absolute;
+    background-image:url('../../assets/fund2.jpeg');
+    background-color:rgb(209, 45, 72)
+}
+button{
+    position: absolute;
+    left:70%;
+    top:80%;
+    height:13%;
+    width: 15%;
+    border-radius:5em;
+}
+span{
+    font-family: fantasy;
+    color:rgb(70, 64, 64);
+    font-size:17px
+}
+button img{
+    top:18%;
+    position: absolute;
+    right:30%
+}

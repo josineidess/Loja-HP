@@ -1,0 +1,30 @@
+
+<div id="f" *ngIf='produtos'>
+<mat-card style="left:6%;height:65%;top:30%;width:25%;position: absolute;text-align:left">
+<img [src]="produtos[1].imagem">
+<br>
+<br>
+<span class="descricao" [textContent]="produtos[1].descricao"></span>
+<br>
+<span class="preco">R$ {{produtos[1].preco}},00</span>
+<button (click)="this.carrinho.adicionar(produtos[1].id)" pButton class="ui-button-rounded"><img src="../../assets/carrinho.png"/></button>
+</mat-card>
+<mat-card style="left: 38%;height:65%;top:30%;width:25%;position: absolute;text-align: left">
+<img [src]="produtos[2].imagem">
+<br>
+<br>
+<span class="descricao" [textContent]="produtos[2].descricao"></span>
+<br>
+<span class="preco">R$ {{produtos[2].preco}},00</span>
+<button (click)="this.carrinho.adicionar(produtos[2].id)" pButton class="ui-button-rounded" color="primary"><img src="../../assets/carrinho.png"/></button>
+</mat-card>
+<mat-card style="left:70%;height:65%;top:30%;width:25%;position: absolute;text-align: left">
+<img src="../../assets/pvarinhahp.webp"/>
+<br>
+<br>
+<span class="descricao" [textContent]="produtos[3].descricao"></span>
+<br>
+<span class="preco">R$ {{produtos[3].preco}},00</span>
+<button (click)="this.carrinho.adicionar(produtos[3].id)" pButton class="ui-button-rounded"><img src="../../assets/carrinho.png"/></button>
+</mat-card>
+</div>
